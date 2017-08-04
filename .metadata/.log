@@ -1,0 +1,105 @@
+!SESSION 2017-04-25 21:50:19.454 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2017-04-25 21:50:51.181
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin com.vmware.vfabric.ide.eclipse.tcserver.core.
+
+!ENTRY org.eclipse.jface 2 0 2017-04-25 21:50:53.131
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-25 21:50:53.131
+!MESSAGE A conflict occurred for CTRL+F9:
+Binding(CTRL+F9,
+	ParameterizedCommand(Command(org.eclipse.mylyn.tasks.ui.command.activateTask,Activate Task,
+		,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7bc78ecf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F9,
+	ParameterizedCommand(Command(RunSQLAction,Run SQL,
+		Run SQL,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6a70f785,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.net 4 0 2017-04-25 21:50:56.930
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2017-04-25 21:51:02.269
+!MESSAGE Installed snippet library: C:\Users\Administrator\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\136\0\.cp\snippets\html\css_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2017-04-25 21:51:02.317
+!MESSAGE Installed snippet library: C:\Users\Administrator\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\136\0\.cp\snippets\html\forms_lists_snippets.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-04-25 21:51:02.341
+!MESSAGE Unable to update index for nexus|http://maven.dtdream.com/content/groups/public/: http://maven.dtdream.com/content/groups/public/.index/nexus-maven-repository-index.properties
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2017-04-25 21:51:02.386
+!MESSAGE Installed snippet library: C:\Users\Administrator\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\136\0\.cp\snippets\html\htmlform_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2017-04-25 21:51:02.473
+!MESSAGE Installed snippet library: C:\Users\Administrator\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\136\0\.cp\snippets\html\html_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2017-04-25 21:51:02.547
+!MESSAGE Installed snippet library: C:\Users\Administrator\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\136\0\.cp\snippets\html\javascript_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2017-04-25 21:51:02.650
+!MESSAGE Installed snippet library: C:\Users\Administrator\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\136\0\.cp\snippets\jsp\jsf_f_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2017-04-25 21:51:02.801
+!MESSAGE Installed snippet library: C:\Users\Administrator\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\136\0\.cp\snippets\jsp\jsf_h_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2017-04-25 21:51:02.916
+!MESSAGE Installed snippet library: C:\Users\Administrator\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\136\0\.cp\snippets\jsp\struts_bean_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2017-04-25 21:51:02.978
+!MESSAGE Installed snippet library: C:\Users\Administrator\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\136\0\.cp\snippets\jsp\struts_html_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2017-04-25 21:51:03.040
+!MESSAGE Installed snippet library: C:\Users\Administrator\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\136\0\.cp\snippets\jsp\struts_logic_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2017-04-25 21:51:03.081
+!MESSAGE Installed snippet library: C:\Users\Administrator\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\136\0\.cp\snippets\jsp\struts_tiles_snippets.xml
+
+!ENTRY com.genuitec.eclipse.struts2 4 0 2017-04-25 21:53:50.954
+!MESSAGE Unable to create graphical representation for file ${url}
+
+!ENTRY com.genuitec.eclipse.struts2 4 0 2017-04-25 21:53:50.955
+!MESSAGE Unable to create graphical representation for file ${url}
+
+!ENTRY com.genuitec.eclipse.struts2 4 0 2017-04-25 21:53:50.955
+!MESSAGE Unable to create graphical representation for file ${url}
+
+!ENTRY com.genuitec.eclipse.struts2 4 0 2017-04-25 21:53:50.955
+!MESSAGE Unable to create graphical representation for file ${url}
+
+!ENTRY com.genuitec.eclipse.struts2 4 0 2017-04-25 21:53:50.956
+!MESSAGE Unable to create graphical representation for file ${url}
+
+!ENTRY com.genuitec.eclipse.struts2 4 0 2017-04-25 21:53:50.956
+!MESSAGE Unable to create graphical representation for file ${url}
+
+!ENTRY com.genuitec.eclipse.struts2 4 0 2017-04-25 21:53:50.956
+!MESSAGE Unable to create graphical representation for file ${url}
+
+!ENTRY com.genuitec.eclipse.struts2 4 0 2017-04-25 21:53:50.956
+!MESSAGE Unable to create graphical representation for file ${url}
+
+!ENTRY com.genuitec.eclipse.struts2 4 0 2017-04-25 21:53:50.956
+!MESSAGE Unable to create graphical representation for file ${url}
+
+!ENTRY com.genuitec.eclipse.struts2 4 0 2017-04-25 21:53:50.957
+!MESSAGE Unable to create graphical representation for file ${url}
+
+!ENTRY com.genuitec.eclipse.struts2 4 0 2017-04-25 21:53:50.957
+!MESSAGE Unable to create graphical representation for file ${url}
+
+!ENTRY com.genuitec.eclipse.struts2 4 0 2017-04-25 21:53:50.957
+!MESSAGE Unable to create graphical representation for file ${url}
