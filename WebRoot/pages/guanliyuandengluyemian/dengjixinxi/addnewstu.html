@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>学员入学注册</title>
+<link rel="stylesheet" type="text/css" href="../../../css/main.css">
+
+<script src="../../../js/clock.js"></script>
+
+<script>
+	function checkValue(s) {
+		var len = s.length;
+
+		for ( var i = 0; i < len; i++) {
+			if (s.charAt(i) != "") {
+				return false;
+			}
+		}
+		return true;
+	}
+	function okHandle() {
+		if (checkValue(document.getElementsByName("userName")[0].value)) {
+			alert("学生姓名不能为空！");
+			return false;
+		} else if (checkValue(document.getElementsByName("number")[0].value)) {
+			alert("注册学号不能为空！");
+			return false;
+		} else if (checkValue(document.getElementsByName("nameId")[0].value)) {
+			alert("学籍不能为空！");
+			return false;
+		} else if (checkValue(document.getElementsByName("birthday")[0].value)) {
+			alert("出生年月不能为空！");
+			return false;
+		} else if (checkValue(document.getElementsByName("address")[0].value)) {
+			alert("地址不能为空！");
+			return false;
+		} else if (checkValue(document.getElementsByName("telephone")[0].value)) {
+			alert("联系号码不能为空！");
+			return false;
+		} else
+		    alert("注册成功！");
+			return true;
+	}
+</script>
+
+
+</head>
+
+<body>
+	<form action="">
+		<span class="title">学员入学注册</span>
+		<hr>
+		<h6></h6>
+		<table width="504" border="1" align="center" bordercolor="#3399FF"
+			id="customers">
+			<tr>
+				<th width="98" bordercolor="#3399FF" bgcolor="#3399FF"><label
+					class="nameid">年级</label></th>
+				<td bordercolor="#3399FF"><label> <select
+						name="select3" id="select">
+							<option>&nbsp;</option>
+							<option selected="selected">大一</option>
+							<option>大二</option>
+							<option>大三</option>
+							<option>大四</option>
+					</select>
+				</label></td>
+			</tr>
+			<tr>
+				<th width="98" bordercolor="#3399FF" bgcolor="#3399FF"><label
+					class="nameid">班级名称</label></th>
+				<td bordercolor="#3399FF"><select name="select"
+					style="width: 120px">
+						<option>&nbsp;</option>
+						<option selected="selected">JAVA</option>
+						<option>软件测试</option>
+						<option>大型机</option>
+						<option>数据仓库</option>
+				</select></td>
+			</tr>
+			<tr>
+				<th width="98" bordercolor="#3399FF" bgcolor="#3399FF"><label
+					class="nameid">姓名</label></th>
+				<td>
+						<input name="userName" type="text" id="textfield2" />
+					</td>
+			</tr>
+
+			<tr>
+				<th width="98" bordercolor="#3399FF" bgcolor="#3399FF"><label
+					class="namexb">性别</label></th>
+				<td bordercolor="#3399FF">
+						<input type="radio" name="sex" value="单选" id="RadioGroup1_0"
+							checked="checked" /> 男 <input type="radio" name="sex" value="单选"
+							id="RadioGroup1_1" /> 女
+					</td>
+			</tr>
+			<tr>
+				<th width="98" bordercolor="#3399FF" bgcolor="#3399FF"><label
+					class="number">注册学号</label></th>
+				<td>
+						<input name="number" type="text" id="textfield2" />
+					</td>
+			</tr>
+			<tr>
+				<th width="98" bordercolor="#3399FF" bgcolor="#3399FF"><label
+					class="nameid">学籍</label></th>
+				<td>
+						<input name="nameId" type="text" id="textfield2" />
+					</td>
+			<tr>
+				<th bordercolor="#3399FF" bgcolor="#3399FF"><label class="csny">出生年月</label></th>
+				<td bordercolor="#3399FF">
+					
+						<input type="text" id="firstinput" name="birthday"
+							onClick="javascript:ShowCalendar(this.id)" />
+				</td>
+			</tr>
+
+			<tr>
+				<th width="98" bordercolor="#3399FF" bgcolor="#3399FF"><label
+					class="address">地址</label></th>
+				<td bordercolor="#3399FF">
+						<input name="address" type="text" id="textfield2" maxlength="20" />
+					</td>
+
+
+			</tr>
+			<tr>
+				<th bordercolor="#3399FF" bgcolor="#3399FF"><label class="lxhm">联系号码</label></th>
+				<td bordercolor="#3399FF">
+						<input name="telephone" type="text" id="textfield2" maxlength="11" />
+					</td>
+			</tr>
+
+
+
+            </table>
+            <table width="600" align="center"class="boc3">
+			<tr>
+				<td colspan="2" align="center" valign="middle" bordercolor="#3399FF"><input
+					type="submit" name="Submit10" value="注册" onClick="okHandle()" />
+					&nbsp; &nbsp; &nbsp; &nbsp;<input type="reset" name="button"
+					id="button" value="重置" /></td>
+			</tr>
+		</table>
+	</form>
+	
+</body>
+</html>

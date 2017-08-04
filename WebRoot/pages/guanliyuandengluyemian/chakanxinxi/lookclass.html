@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>查看班级信息</title>
+<link rel="stylesheet" type="text/css" href="../../../css/main.css">
+<style type="text/css">
+<!--
+.STYLE1 {font-family: "华文楷体"}
+-->
+</style>
+
+</head>
+
+<body>
+<form  name="form" action="lookstu.html">
+ <span class="title">查看班级信息</span>
+ <hr>
+ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;年级：
+  <label>
+    <select name="select3" id="select">
+	  <option>&nbsp;</option>
+      <option>大一</option>
+      <option>大二</option>
+      <option>大三</option>
+      <option>大四</option>
+    </select>
+  </label>
+  &nbsp; &nbsp; &nbsp; 班级：
+<label>
+<select name="select" style="width:120px">
+	<option>&nbsp;</option>
+  <option>JAVA</option>
+  <option>软件测试</option>
+  <option>大型机</option>
+  <option>数据仓库</option>
+</select>
+</label>
+
+
+
+<h6></h6>
+
+<table width="600" border="1" align="center" bordercolor="#3399FF" id="customers">
+<tr>
+<th width="122" bordercolor="#3399FF" bgcolor="#3399FF"  >选中</th>
+
+  <th width="226" bordercolor="#3399FF" bgcolor="#3399FF"  >年级编号</th>
+  <th width="146" bordercolor="#3399FF" bgcolor="#3399FF"  >年级</th>
+<th width="184" bordercolor="#3399FF" bgcolor="#3399FF" >班级名称</th>
+</tr>
+
+<tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="del"  type="radio" value="radiobutton"></td>
+  <td bordercolor="#3399FF">1201</td>
+  <td bordercolor="#3399FF">大一</td>
+  <td bordercolor="#3399FF">软件测试</td>
+  
+ <tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="radio"  type="radio" value="radiobutton"></td>
+  <td bordercolor="#3399FF">1203</td>
+  <td bordercolor="#3399FF">大一</td>
+  <td bordercolor="#3399FF">数据仓库</td>
+  
+  </tr>
+  <tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="radio2"  type="radio" value="radiobutton"></td>
+  <td bordercolor="#3399FF">1202</td>
+  <td bordercolor="#3399FF">大一</td>
+  <td bordercolor="#3399FF">大型机</td>
+  </tr>
+ <tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="radio3"  type="radio" value="radiobutton"></td>
+  <td bordercolor="#3399FF">1101</td>
+  <td bordercolor="#3399FF">大二</td>
+  <td bordercolor="#3399FF">软件测试</td>
+</tr>
+
+<tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="radio4"  type="radio" value="radiobutton"></td>
+  <td bordercolor="#3399FF">1106</td>
+  <td bordercolor="#3399FF">大二</td>
+  <td bordercolor="#3399FF">JAVA</td>
+</tr>
+ <tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="radio5"  type="radio" value="radiobutton"></td>
+  <td bordercolor="#3399FF">1002</td>
+  <td bordercolor="#3399FF">大三</td>
+  <td bordercolor="#3399FF">软件测试</td>
+  </tr>
+ <tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="radio6"  type="radio" value="radiobutton"></td>
+  <td bordercolor="#3399FF">1005</td>
+  <td bordercolor="#3399FF">大三</td>
+  <td bordercolor="#3399FF">数据仓库</td>
+</tr>
+ <tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="radio7"  type="radio" value="radiobutton"></td>
+  <td bordercolor="#3399FF">0901</td>
+  <td bordercolor="#3399FF">大四</td>
+  <td bordercolor="#3399FF">软件测试</td>
+  </tr>
+  <tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="radio7"  type="radio" value="radiobutton"></td>
+  <td bordercolor="#3399FF">0905</td>
+  <td bordercolor="#3399FF">大四</td>
+  <td bordercolor="#3399FF">JAVA</td>
+  </tr>
+  <tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="radio7"  type="radio" value="radiobutton"></td>
+  <td bordercolor="#3399FF">0909</td>
+  <td bordercolor="#3399FF">大四</td>
+  <td bordercolor="#3399FF">大型机</td>
+  </tr>
+</table>
+
+
+<table width="600" align="center"class="boc3">
+<tr align="center"><td width="600">
+
+<label>
+<input type="submit" name="Submit"  value="查询该班级学生信息"  />
+</label>
+</tr>
+
+<tr align="center"><td>当前第1页/共10页
+                       <a href="#">首页</a>&nbsp;<a href="#">上一页</a>&nbsp;<a href="#">下一页</a>&nbsp;<a href="#">尾页</a>
+                       <select name="pageno">
+					   
+					   </select>&nbsp;<a href="#">Go！</a>
+				   </td>
+</tr>
+</table>
+
+</form>
+</body>
+</html>

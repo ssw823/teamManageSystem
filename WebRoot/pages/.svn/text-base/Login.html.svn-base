@@ -1,0 +1,73 @@
+﻿<!DOCTYPE HTML>
+<html dir="ltr" lang="en-US">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>Web 2.0 Login Form by Azmind.com</title>
+
+	<!--- CSS --->
+	<link rel="stylesheet" href="../css/login.css" type="text/css" />
+
+	<script language="JavaScript" type="text/javascript">
+function dl(){
+var a="a"
+var b="a"
+if((document.getElementById("username").value!=a)&&(document.getElementById("username").value!=b))
+alert("用户名输入错误")
+else{
+if(document.getElementById("username").value==a){
+if(document.getElementById("password").value==a){
+window.location="common/Index.html"
+}
+else
+alert("密码输入错误")
+}
+if(document.getElementById("username").value==b){
+if(document.getElementById("password").value==b){
+window.location="common/Index.html"
+}
+else
+alert("密码输入错误")
+}
+}
+}
+function del(){
+	window.location="Login.html"
+}
+</script><br>
+
+	</head>
+
+<body>
+		<div id="container">
+			<form  action="common/Index.html" >
+				<div class="login">登陆/LOGIN</div>
+				<div class="username-text">用户名：</div>
+				<div class="password-text">密码：</div>
+				<div class="username-field">
+					<input type="text" name="username" />
+				</div>
+			  <div class="password-field">
+					<input type="password" name="password"  />
+				</div>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <div align="center" style="width:450px">
+                <p>
+                  <label>
+                    <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" checked="checked">
+                  学员</label>
+                  <label>
+                    <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_1">
+                  非学员</label>
+                  <br>
+                </p>
+              </div><input type="submit" name="submit" value="GO" onClick="dl()" />
+
+<p>&nbsp;</p>
+<p>
+</form>
+		</div>
+	</body>
+</html>

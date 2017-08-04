@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<SCRIPT LANGUAGE="JavaScript">
+  <!--
+function showtime()
+{
+var today,hour,second,minute,year,month,date;
+var strDate ;
+today=new Date(); 
+year = today.getYear();
+if (year < 1900) { year+=1900; } 
+month = today.getMonth()+1;
+date = today.getDate();
+hour = today.getHours();
+minute =today.getMinutes() <10 ? "0"+today.getMinutes() :today.getMinutes() ;
+second = today.getSeconds();
+document.getElementById('datetime').innerHTML ="北京时间： "+year+"年"+month+"月"+date+"日" + "  " + hour + ":" + minute + ":" + second;
+in_ID = setTimeout("showtime();", 1000);
+}
+  //-->
+  </SCRIPT>
+
+<link rel="stylesheet" type="text/css"  href="../../css/Logo.css" /></head>
+<body >
+<table width="1004" >
+<tr>
+  
+   <td width="900" height="32" align="center" valign="bottom">
+      <marquee behavior="scroll" direction="left" loop="-1" class="boc7">
+      <p><font size="+1" color="#6600FF" style="font-size:15px">您好，欢迎用户admin进入</font><font size="+1" color="#6600FF" style="font-size:15px">系统</font>      </p>
+     
+      </marquee>
+   </td>
+</tr>
+   <tr>
+    <td width="1004">
+    <div align="right" id="datetime" style="font-size:18px">
+      <script>
+  showtime();
+  
+ </script></div></td>
+ </tr>
+</table>
+
+
+
+</body>
+</html>	

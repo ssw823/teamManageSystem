@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>毕业班级信息</title>
+<link rel="stylesheet" type="text/css"  href="../../../css/main.css">
+<style type="text/css">
+<!--
+.STYLE4 {
+	font-size: x-large;
+	font-weight: bold;
+}
+-->
+</style>
+<script type="text/javascript">
+function $(objId){
+return document.getElementById(objId);
+}
+function del_tbl(tblN,ckN){
+var ck = document.getElementsByName(ckN);
+    var tab = $(tblN);
+var rowIndex;
+if(confirm("学籍信息管理系统提示：你确认要删除吗?")){
+for(var i=0;i<ck.length;i++){
+        if(ck[i].checked){
+rowIndex = ck[i].parentNode.parentNode.sectionRowIndex;
+         tab.deleteRow(rowIndex);
+i = -1;
+}
+}
+}
+}</script>
+</script>
+</head>
+
+<body>
+<form   action="file:///D|/JT003/pages/guanliyuandengluyemian/biyexinxi/biyestu.html" >
+  <span class="title">毕业班级信息  </span>
+  <hr>
+  &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;班级：
+  <label>
+  <input type="text" name="textfield2" id="textfield2"  />
+  </label>
+  &nbsp; 入学年份：
+  <label>
+<input type="text" name="textfield2" id="textfield2"  />
+</label>
+<input type="submit" name="Submit" value="查询"  />
+
+
+
+
+<h6></h6>
+
+<table width="600" border="1" align="center" bordercolor="#3399FF" id="customers">
+    <tr align="center">
+    <th width="82"  bordercolor="#3399FF" bgcolor="#3399FF"  >选中</th>
+    <th width="154"  bordercolor="#3399FF" bgcolor="#3399FF"  >班级名称</th>
+    <th width="154" bordercolor="#3399FF" bgcolor="#3399FF" >班级人数</th>
+    <th width="74"  bordercolor="#3399FF" bgcolor="#3399FF" >入学年份</th>
+    <th width="102"  bordercolor="#3399FF" bgcolor="#3399FF" >年级</th>
+  </tr>
+  <tr align="center">
+    <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+    <td>JAVA</td>
+    <td>45</td>
+    <td >2008</td>
+    <td >已毕业</td>
+  </tr>
+  <tr align="center">
+    <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+    <td>软件测试</td>
+    <td>48</td>
+    <td>2008</td>
+    <td>已毕业</td>
+  </tr>
+    <tr align="center">
+    <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+    <td>数据仓库</td>
+    <td>40</td>
+    <td>2008</td>
+    <td>已毕业</td>
+  </tr>
+  <tr align="center">
+    <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+    <td>软件测试</td>
+    <td>48</td>
+    <td>2008</td>
+    <td>已毕业</td>
+  </tr>
+   <tr align="center">
+    <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+    <td>JAVA</td>
+    <td>50</td>
+    <td>2008</td>
+    <td>已毕业</td>
+  </tr>
+  <tr align="center">
+    <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+    <td>数据仓库</td>
+    <td>42</td>
+    <td>2008</td>
+    <td>已毕业</td>
+  </tr>
+</table>
+<table width="601" align="center"class="boc3" >
+<tr align="center"><td width="593" >
+ &nbsp; &nbsp;&nbsp;&nbsp;
+ <a href="#" onclick="del_tbl('customers','del')">删除</a>
+
+ &nbsp; <label>
+ <a href="jibenxinxi.html">查看该班级学生信息</a></label></td>
+</tr>
+<tr align="center"><td>当前第1页/共10页
+                       <a href="#">首页</a>&nbsp;<a href="#">上一页</a>&nbsp;<a href="#">下一页</a>&nbsp;<a href="#">尾页</a>
+                       <select name="pageno"></select>&nbsp;<a href="#">Go！</a>
+				   </td>
+</tr>
+</table>
+
+</form>
+</body>
+</html>

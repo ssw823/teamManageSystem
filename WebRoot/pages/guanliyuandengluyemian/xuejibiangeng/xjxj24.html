@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>查看学生信息</title>
+<link rel="stylesheet" type="text/css" href="../../../css/main.css">
+<style type="text/css">
+<!--
+.STYLE1 {font-family: "华文楷体"}
+a:link {
+	color: #3399FF;
+}
+a:visited {
+	color: #3399FF;
+}
+-->
+</style>
+<script type="text/javascript">
+function $(objId){
+return document.getElementById(objId);
+}
+function del_tbl(tblN,ckN){
+var ck = document.getElementsByName(ckN);
+    var tab = $(tblN);
+var rowIndex;
+if(confirm("学籍信息管理系统提示：你确认要删除吗?")){
+for(var i=0;i<ck.length;i++){
+        if(ck[i].checked){
+rowIndex = ck[i].parentNode.parentNode.sectionRowIndex;
+         tab.deleteRow(rowIndex);
+i = -1;
+}
+}
+}
+}</script>
+</head>
+
+<body>
+<form>
+ <span class="title">确定修改学生信息</span>
+ <hr>
+
+
+
+
+<h6></h6>
+
+<table width="60%" border="1" align="center" bordercolor="#3399FF" id="customers">
+<tr>
+<th width="12%" bordercolor="#3399FF" bgcolor="#3399FF"  >选中</th>
+<th width="11%" bordercolor="#3399FF" bgcolor="#3399FF"  >年级</th>
+
+<th width="11%" bordercolor="#3399FF" bgcolor="#3399FF"  >班级名称</th>
+<th width="13%" bordercolor="#3399FF" bgcolor="#3399FF"  >姓名</th>
+<th width="15%" bordercolor="#3399FF" bgcolor="#3399FF" >性别</th>
+<th width="18%" bordercolor="#3399FF" bgcolor="#3399FF" >注册学号</th>
+<th width="20%" bordercolor="#3399FF" bgcolor="#3399FF" >学籍</th>
+</tr>
+
+<tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+<td bordercolor="#3399FF">大二</td>
+<td bordercolor="#3399FF">数据仓库</td>
+<td bordercolor="#3399FF">陈九九</td>
+<td bordercolor="#3399FF">男</td>
+<td bordercolor="#3399FF">097299</td>
+<td bordercolor="#3399FF">在校</td>
+</tr>
+<tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+<td bordercolor="#3399FF">大二</td>
+<td bordercolor="#3399FF">数据仓库</td>
+<td bordercolor="#3399FF">方十三</td>
+<td bordercolor="#3399FF">女</td>
+<td bordercolor="#3399FF">097213</td>
+<td bordercolor="#3399FF">在校</td>
+</tr>
+<tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+<td bordercolor="#3399FF">大二</td>
+<td bordercolor="#3399FF">数据仓库</td>
+<td bordercolor="#3399FF">张十四</td>
+<td bordercolor="#3399FF">男</td>
+<td bordercolor="#3399FF">097214</td>
+<td bordercolor="#3399FF">在校</td>
+</tr>
+<tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+<td bordercolor="#3399FF">大二</td>
+<td bordercolor="#3399FF">数据仓库</td>
+<td bordercolor="#3399FF">王十一</td>
+<td bordercolor="#3399FF">男</td>
+<td bordercolor="#3399FF">097211</td>
+<td bordercolor="#3399FF">在校</td>
+</tr>
+<tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+<td bordercolor="#3399FF">大二</td>
+<td bordercolor="#3399FF">数据仓库</td>
+<td bordercolor="#3399FF">杨十九</td>
+<td bordercolor="#3399FF">女</td>
+<td bordercolor="#3399FF">097219</td>
+<td bordercolor="#3399FF">在校</td>
+</tr>
+<tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+<td bordercolor="#3399FF">大二</td>
+<td bordercolor="#3399FF">数据仓库</td>
+<td bordercolor="#3399FF">周二十四</td>
+<td bordercolor="#3399FF">女</td>
+<td bordercolor="#3399FF">097224</td>
+<td bordercolor="#3399FF">在校</td>
+</tr>
+</table>
+
+
+<table width="600" align="center"class="boc3">
+<tr align="center">
+  <td width="613" >
+<a  href="../xuejibiangeng/swdj.html">修改学籍</a></td>
+</tr>
+<tr align="center"><td>当前第1页/共10页
+                       <a href="#">首页</a>&nbsp;<a href="#">上一页</a>&nbsp;<a href="#">下一页</a>&nbsp;<a href="#">尾页</a>
+                       <select name="pageno"></select>&nbsp;<a href="#">Go！</a>
+				   </td>
+</tr>
+</table>
+
+</form>
+</body>
+</html>

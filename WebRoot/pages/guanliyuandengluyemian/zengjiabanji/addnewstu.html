@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>新班级学生信息</title>
+<link rel="stylesheet" type="text/css" href="../../../css/main.css">
+
+
+<script type="text/javascript">
+function $(objId){
+return document.getElementById(objId);
+}
+function del_tbl(tblN,ckN){
+var ck = document.getElementsByName(ckN);
+    var tab = $(tblN);
+var rowIndex;
+if(confirm("学籍信息管理系统提示：你确认要删除吗?")){
+for(var i=0;i<ck.length;i++){
+        if(ck[i].checked){
+rowIndex = ck[i].parentNode.parentNode.sectionRowIndex;
+         tab.deleteRow(rowIndex);
+i = -1;
+}
+}
+}
+}</script>
+
+
+
+
+<style type="text/css">
+<!--
+a:link {
+	color: #3399FF;
+}
+a:visited {
+	color: #3399FF;
+}
+-->
+</style></head>
+
+<body>
+<form>
+ <span class="title">查看新班级学生</span>
+ <hr>
+
+<table align="center" >
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;班级：</td>
+      <td>
+         <input type="text" name="textfield" id="textfield3" />
+      </td>
+      <th>&nbsp;&nbsp;&nbsp;<input type="submit" name="button3" id="button3" value="查询" /></th>
+  </tr>
+  </table>
+
+
+
+<table width="600" border="1" align="center" bordercolor="#3399FF"  id="customers">
+<tr>
+<th  bordercolor="#3399FF" bgcolor="#3399FF"  >选中</th>
+<th bordercolor="#3399FF" bgcolor="#3399FF"  >班级编号</th>
+<th bordercolor="#3399FF" bgcolor="#3399FF"  >年级</th>
+<th bordercolor="#3399FF" bgcolor="#3399FF"  >班级名称</th>
+<th  bordercolor="#3399FF" bgcolor="#3399FF"  >姓名</th>
+<th  bordercolor="#3399FF" bgcolor="#3399FF" >性别</th>
+<th  bordercolor="#3399FF" bgcolor="#3399FF" >注册学号</th>
+<th  bordercolor="#3399FF" bgcolor="#3399FF"  >学籍</th>
+</tr>
+
+
+
+<tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="del" type="radio" value="radiobutton"   /></td>
+<td bordercolor="#3399FF">1001</td>
+<td bordercolor="#3399FF">大一</td>
+<td bordercolor="#3399FF">JAVA</td>
+<td bordercolor="#3399FF">陈一</td>
+<td bordercolor="#3399FF">男</td>
+<td bordercolor="#3399FF">097100</td>
+<td bordercolor="#3399FF">在校</td>
+</tr>
+
+
+<tr align="center" class="tgl">
+<td bordercolor="#3399FF"><input name="del" id="del" type="radio" value="radiobutton"  /></td>
+<td bordercolor="#3399FF">1001</td>
+<td bordercolor="#3399FF">大一</td>
+<td bordercolor="#3399FF">JAVA</td>
+<td bordercolor="#3399FF">张二</td>
+<td bordercolor="#3399FF">男</td>
+<td bordercolor="#3399FF">097101</td>
+<td bordercolor="#3399FF">在校</td>
+</tr>
+
+
+<tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="del" type="radio" value="radiobutton"  /></td>
+<td bordercolor="#3399FF">1001</td>
+<td bordercolor="#3399FF">大一</td>
+<td bordercolor="#3399FF">JAVA</td>
+<td bordercolor="#3399FF">王三</td>
+<td bordercolor="#3399FF">女</td>
+<td bordercolor="#3399FF">097102</td>
+<td bordercolor="#3399FF">在校</td>
+</tr>
+
+
+<tr align="center" class="tgl">
+<td bordercolor="#3399FF"><input name="del" id="del" type="radio" value="radiobutton"  /></td>
+<td bordercolor="#3399FF">1001</td>
+<td bordercolor="#3399FF">大一</td>
+<td bordercolor="#3399FF">JAVA</td>
+<td bordercolor="#3399FF">李四</td>
+<td bordercolor="#3399FF">女</td>
+<td bordercolor="#3399FF">097103</td>
+<td bordercolor="#3399FF">在校</td>
+</tr>
+
+
+<tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="del" type="radio" value="radiobutton"  /></td>
+<td bordercolor="#3399FF">1001</td>
+<td bordercolor="#3399FF">大一</td>
+<td bordercolor="#3399FF">JAVA</td>
+<td bordercolor="#3399FF">周五</td>
+<td bordercolor="#3399FF">男</td>
+<td bordercolor="#3399FF">097104</td>
+<td bordercolor="#3399FF">在校</td>
+</tr>
+
+
+<tr align="center" class="tgl">
+<td bordercolor="#3399FF"><input name="del" id="del" type="radio" value="radiobutton"  /></td>
+<td bordercolor="#3399FF">1001</td>
+<td bordercolor="#3399FF">大一</td>
+<td bordercolor="#3399FF">JAVA</td>
+<td bordercolor="#3399FF">杨六</td>
+<td bordercolor="#3399FF">女</td>
+<td bordercolor="#3399FF">097106</td>
+<td bordercolor="#3399FF">在校</td>
+</tr>
+<tr align="center" >
+<td bordercolor="#3399FF"><input name="del" id="del" type="radio" value="radiobutton"  /></td>
+<td bordercolor="#3399FF">1001</td>
+<td bordercolor="#3399FF">大一</td>
+<td bordercolor="#3399FF">JAVA</td>
+<td bordercolor="#3399FF">孟七</td>
+<td bordercolor="#3399FF">女</td>
+<td bordercolor="#3399FF">097107</td>
+<td bordercolor="#3399FF">在校</td>
+</tr><tr align="center" class="tgl">
+<td bordercolor="#3399FF"><input name="del" id="del" type="radio" value="radiobutton"  /></td>
+<td bordercolor="#3399FF">1001</td>
+<td bordercolor="#3399FF">大一</td>
+<td bordercolor="#3399FF">JAVA</td>
+<td bordercolor="#3399FF">胡九</td>
+<td bordercolor="#3399FF">男</td>
+<td bordercolor="#3399FF">097109</td>
+<td bordercolor="#3399FF">在校</td>
+</tr>
+
+<tr align="center">
+<td bordercolor="#3399FF"><input name="del" id="del" type="radio" value="radiobutton"  /></td>
+<td bordercolor="#3399FF">1001</td>
+<td bordercolor="#3399FF">大一</td>
+<td bordercolor="#3399FF">JAVA</td>
+<td bordercolor="#3399FF">戎十一</td>
+<td bordercolor="#3399FF">男</td>
+<td bordercolor="#3399FF">097111</td>
+<td bordercolor="#3399FF">在校</td>
+</tr><tr align="center" class="tgl">
+<td bordercolor="#3399FF"><input name="del" id="del" type="radio" value="radiobutton"  /></td>
+<td bordercolor="#3399FF">1001</td>
+<td bordercolor="#3399FF">大一</td>
+<td bordercolor="#3399FF">JAVA</td>
+<td bordercolor="#3399FF">张十</td>
+<td bordercolor="#3399FF">男</td>
+<td bordercolor="#3399FF">097110</td>
+<td bordercolor="#3399FF">在校</td>
+</tr>
+
+<tr align="center" >
+<td bordercolor="#3399FF"><input name="del" id="del" type="radio" value="radiobutton"  /></td>
+<td bordercolor="#3399FF">1001</td>
+<td bordercolor="#3399FF">大一</td>
+<td bordercolor="#3399FF">JAVA</td>
+<td bordercolor="#3399FF">侯十二</td>
+<td bordercolor="#3399FF">女</td>
+<td bordercolor="#3399FF">097112</td>
+<td bordercolor="#3399FF">在校</td>
+</tr>
+
+
+</table>
+
+
+
+
+<table width="600" align="center" class="boc3">
+<tr align="center">
+  <td width="600" >
+
+  <a href="addstunews.html">添加学生</a>  
+		&nbsp;&nbsp;
+		<a href="#" onclick="del_tbl('customers','del')">删除学生</a>
+		&nbsp;&nbsp;
+		<a href="../dengjixinxi/person.html">查看学生信息详情</a></td>
+</tr>
+<tr align="center"><td>当前第1页/共10页
+                       <a href="#">首页</a>&nbsp;<a href="#">上一页</a>&nbsp;<a href="#">下一页</a>&nbsp;<a href="#">尾页</a>
+                       <select name="pageno"></select>&nbsp;<a href="#">Go！</a>
+				   </td>
+</tr>
+</table>
+
+</form>
+</body>
+</html>

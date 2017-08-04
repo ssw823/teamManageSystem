@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>查看新添加班级</title>
+<link href="../../../css/main.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+<!--
+a:link {
+	color: #3399FF;
+}
+a:visited {
+	color: #3399FF;
+}
+-->
+</style>
+
+
+
+</head>
+<script type="text/javascript">
+function $(objId){
+return document.getElementById(objId);
+}
+function del_tbl(tblN,ckN){
+var ck = document.getElementsByName(ckN);
+    var tab = $(tblN);
+var rowIndex;
+if(confirm("学籍管理系统提示：你确认要删除吗?")){
+for(var i=0;i<ck.length;i++){
+        if(ck[i].checked){
+rowIndex = ck[i].parentNode.parentNode.sectionRowIndex;
+         tab.deleteRow(rowIndex);
+i = -1;
+}
+}
+}
+}
+</script>
+
+<body>
+<span class="title">查看新添加班级</span>
+<hr />
+<table align="center" >
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;班级编号：</td>
+      <td>
+         <input type="text" name="textfield" id="textfield3" />
+      </td>
+      <td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;班级名称：</td>
+      <th> <label for="textfield2"></label>
+        <input type="text" name="textfield2" id="textfield2" />
+      </th>
+      <th>&nbsp;&nbsp;&nbsp;<input type="submit" name="button3" id="button3" value="查询" /></th>
+  </tr>
+   </table>
+   
+   
+  <form  action="../dengjixinxi/addnewstu.html"   >
+    <table border="1" align="center"  bordercolor="#3399FF" id="customers">
+      <tr>
+        <th  bgcolor="#3399FF">选中</th>
+        <th bgcolor="#3399FF">班级编号</th>
+		<th bgcolor="#3399FF">年级</th>
+        <th bgcolor="#3399FF">班级名称</th>
+	  </tr>
+      <tr>
+        <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+        <td class="number">1201</td>
+        <td >大一</td>
+		<td >JAVA</td>
+	  </tr>
+      <tr class="tgl">
+        <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+        <td class="number">1202</td>
+		<td >大一</td>
+        <td >大型机</td>
+	  </tr>
+      <tr>
+        <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+        <td class="number">1203</td>
+		<td >大一</td>
+        <td width="234" >数据仓库</td>
+	  </tr>
+      <tr class="tgl">
+        <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+        <td class="number">1204</td>
+		<td >大一</td>
+        <td >软件测试</td>
+	  </tr>
+      <tr>
+        <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+        <td class="number">1205</td>
+		<td >大一</td>
+        <td>软件测试</td>
+	  </tr>
+      <tr class="tgl">
+        <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+        <td class="number">1206</td>
+		<td >大一</td>
+        <td>JAVA</td>
+	  </tr>
+      <tr >
+         <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+        <td class="number">1207</td>
+        <td >大一</td>
+        <td>数据仓库</td>
+      </tr>
+      <tr class="tgl">
+       <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+        <td class="number">1208</td>
+        <td >大一</td>
+        <td>大型机</td>
+      </tr>
+      <tr >
+        <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+        <td class="number">1209</td>
+        <td >大一</td>
+        <td>软件测试</td>
+      </tr>
+	  <tr class="tgl">
+        <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+        <td class="number">1210</td>
+        <td >大一</td>
+        <td>JAVA</td>
+      </tr>
+	  <tr >
+        <td><input name="del" id="del"  type="radio" value="radiobutton"  /></td>
+        <td class="number">1211</td>
+        <td >大一</td>
+        <td>大型机</td>
+      </tr>
+    </table>
+	
+<table width="600" align="center" class="boc3">
+    <tr class="boc3" align="center">
+      <td width="499" align="center">
+	  <a href="addnewclass.html">添加新班级</a>&nbsp;&nbsp;
+		<a href="Updatenewstu.html">
+	   修改班级信息</a>
+	   &nbsp;&nbsp;<a href="#" onclick="del_tbl('customers','del')">删除</a> &nbsp;&nbsp;<a href="addnewstu.html">查看班级信息</a></td>
+    </tr>
+	<tr align="center"><td>当前第1页/共10页
+                       <a href="#">首页</a>&nbsp;<a href="#">上一页</a>&nbsp;<a href="#">下一页</a>&nbsp;<a href="#">尾页</a>
+                       <select name="pageno"></select>&nbsp;<a href="#">Go！</td></tr>
+	
+  </table>
+</form>
+</body>
+</html>

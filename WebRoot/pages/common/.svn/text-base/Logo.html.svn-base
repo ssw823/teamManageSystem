@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<SCRIPT LANGUAGE="JavaScript">
+  <!--
+function showtime()
+{
+var today,hour,second,minute,year,month,date;
+var strDate ;
+today=new Date(); 
+year = today.getYear();
+if (year < 1900) { year+=1900; } 
+month = today.getMonth()+1;
+date = today.getDate();
+hour = today.getHours();
+minute =today.getMinutes() <10 ? "0"+today.getMinutes() :today.getMinutes() ;
+second = today.getSeconds();
+document.getElementById('datetime').innerHTML ="现在是： "+year+"年"+month+"月"+date+"日" + "  " + hour + ":" + minute + ":" + second;
+in_ID = setTimeout("showtime();", 1000);
+}
+  //-->
+  </SCRIPT>
+
+<link rel="stylesheet" type="text/css"  href="../../css/Logo.css" /></head>
+<body >
+<table width="1004" >
+<tr>
+   <td width="1004"></td>
+    <div id="datetime" style="font-size:18px"></div>
+      <script>
+  showtime();
+  
+ </script>
+   <td width="84" height="32" align="center" valign="bottom">
+      <marquee behavior="scroll" direction="left" loop="-1" class="boc7">
+<font size="+1" color="#6600FF" style="font-size:15px">您好，欢迎用户admin进入系统</font>
+  </marquee>
+    <a href="../Login.html" target="_parent" class="link"><img src="../../images/exit.gif" width="84" height="32" /></a></td></tr>
+</table>
+
+
+
+</body>
+</html>

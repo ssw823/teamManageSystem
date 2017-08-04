@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>学年升级</title>
+<link rel="stylesheet" type="text/css" href="../../../css/main.css">
+
+
+<script type="text/javascript">
+var ic = document.getElementsByTagName("input");
+function csv(obj){
+ for(i=0;i<ic.length;i++){
+  if(ic[i].type=="checkbox") ic[i].checked=obj.checked;
+ }
+}
+</script>
+
+
+<style type="text/css">
+<!--
+a:link {
+	color: #3399FF;
+}
+a:visited {
+	color: #3399FF;
+}
+-->
+</style></head>
+
+<body>
+<form>
+  <span class="title" >学年升级  </span>
+  <hr>
+
+
+
+
+<h6></h6>
+
+<table width="600" border="1" align="center" bordercolor="#3399FF" id="customers">
+<tr>
+<th  bordercolor="#3399FF" bgcolor="#3399FF"  >选中</th>
+<th  bordercolor="#3399FF" bgcolor="#3399FF"  >班级编号</th>
+<th  bordercolor="#3399FF" bgcolor="#3399FF"  >年级</th>
+<th  bordercolor="#3399FF" bgcolor="#3399FF"  >班级名称</th>
+<th  bordercolor="#3399FF" bgcolor="#3399FF" >入学年份</th>
+</tr>
+
+<tr align="center">
+<td ><label>
+  <input type="checkbox" name="a" />
+</label></td>
+<td>1201</td>
+<td>大一</td>
+  <td>大型机</td>
+  <td >2012</td>
+    </tr>
+	
+<tr align="center" class="tgl">
+<td ><label>
+  <input type="checkbox" name="b" />
+</label></td>
+<td>1202</td>
+<td>大一</td>
+  <td>JAVA</td>
+  <td >2012</td>
+    </tr>
+	
+	
+<tr align="center">
+<td><label>
+  <input type="checkbox" name="c" />
+</label></td>
+<td>1203</td>
+<td>大一</td>
+  <td>数据仓库</td>
+  <td>2012</td>
+    </tr>
+	
+	
+<tr align="center" class="tgl">
+<td><label>
+  <input type="checkbox" name="d" />
+</label></td>
+<td>1204</td>
+<td>大一</td>
+  <td>软件测试</td>
+  <td>2012</td>
+    </tr>
+	
+<tr align="center">
+<td><label>
+  <input type="checkbox" name="e" />
+</label></td>
+<td>1101</td>
+<td>大二</td>
+  <td>JAVA</td>
+  <td>2011</td>
+    </tr>
+<tr align="center" class="tgl">
+<td><label>
+  <input type="checkbox" name="f" />
+</label></td>
+<td>1102</td>
+<td>大二</td>
+  <td>数据仓库</td>
+   <td>2011</td>
+   </tr>
+   <tr align="center">
+     <td><label>
+  <input type="checkbox" name="i" />
+</label></td>
+     <td>1002</td>
+     <td>大三</td>
+     <td>数据仓库</td>
+     <td>2010</td>
+   </tr>
+   <tr align="center"  class="tgl">
+     <td><label>
+  <input type="checkbox" name="j" />
+</label></td>
+     <td>1003</td>
+     <td>大三</td>
+     <td>软件测试</td>
+     <td>2010</td>
+   </tr>
+   <tr align="center">
+     <td><label>
+  <input type="checkbox" name="k" />
+</label></td>
+     <td>0901</td>
+     <td>大四</td>
+     <td>大型机</td>
+     <td>2009</td>
+   </tr>
+   <tr align="center"  class="tgl">
+     <td><label>
+  <input type="checkbox" name="m" />
+</label></td>
+     <td>0903</td>
+     <td>大四</td>
+     <td>软件测试</td>
+     <td>2009</td>
+   </tr>
+   <tr align="center">
+     <td><label>
+  <input type="checkbox" name="n" />
+</label></td>
+     <td>0904</td>
+     <td>大四</td>
+     <td>JAVA</td>
+     <td>2009</td>
+   </tr>
+</table>
+
+
+<table width="600" align="center" class="boc3" >
+
+
+
+<tr><td width="600" ><input name="checkbox" type="checkbox"  onClick="csv(this);" >
+全选 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input name="input" type="submit"  value="学年升级" /> </td>
+</tr>
+<tr align="center"><td>当前第1页/共10页
+                       <a href="#">首页</a>&nbsp;<a href="#">上一页</a>&nbsp;<a href="#">下一页</a>&nbsp;<a href="#">尾页</a>
+                       <select name="pageno">
+					   
+					   
+					   </select>&nbsp;<a href="#">Go！</a>
+				   </td>
+</tr>
+</table>
+
+</form>
+</body>
+</html>
