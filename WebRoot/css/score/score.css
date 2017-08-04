@@ -1,0 +1,10 @@
+/* CSS Document */
+@charset "utf-8";
+.score_input{
+	
+	font-size:12px;
+	text-align:right;
+	width:20px;}
+	.score_select{
+	font-size:12px;
+	width:280px;}

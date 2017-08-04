@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+
+table  { 
+margin:0 auto; 
+text-align: center;
+font-size:12px;
+font-family: "宋体";
+
+} 
+
+
+
+
+
+#customers
+  {
+	
+	width:780px;
+	
+  }
+
+#customers td, #customers th 
+  {
+	border:0px solid #3399FF;
+	height:25px;
+	text-align:center;
+	padding:   1px;   border-style:   solid;   border-width:   1px;   border-color:   #3399FF   #3399FF    #3399FF   #3399FF 
+	
+ }
+
+#customers th 
+  {
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:4px;
+	color:#000000;
+	background-color:#3399FF;
+  }
+ 
+body{
+	font-family: "宋体";
+	font-size:12px;
+	color:#000000;
+	
+	}
+#form{
+	width: 800px;
+	
+}
+hr{
+	height:1px;
+	background-color:#FFFFFF;
+	width:250px;
+	text-align:left;
+}
+.title {
+	font-family: "黑体";
+	text-align:left;
+	color: #000;
+	font-size:30px;
+	
+}
+.button{
+	font-size:12px;
+	height:22px;}
+.checkbox{
+		height:12px;}
+.select{
+	font-size:12px;}	
+.input{
+	font-size:12px;
+	width:65px;
+	height:12px;
+	
+}
+.twl {
+	background-color:#FFF;
+}
+.twc {
+	text-align:center;
+	background-color:#FFF;
+}
+.twr {
+	
+	text-align:right;
+}
+.tgl{	
+  background-color:#EAF2D3;
+  }
+.tgc{
+	
+	text-align:center;
+  background-color:#EAF2D3;
+  }
+.tgr{
+	text-align:right;
+  }
+.boc3 td{
+	font-size:15px;
+	width:775px;
+	background-color:#FFFFFF;
+	text-align:center;
+	
+}
+.number{
+	text-align:right;
+}
+
+a:link {
+	color: #3399FF;
+}
+a:visited {
+	color: #3399FF;
+}

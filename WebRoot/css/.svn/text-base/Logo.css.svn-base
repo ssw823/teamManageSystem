@@ -1,0 +1,9 @@
+/* CSS Document */
+
+body {
+	background-color:#FFF;
+	background-image: url(../images/logo1.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	
+}

@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+.color_red{
+	color:red;
+	font-weight: bold;
+}
+.color_green{
+	color:green;
+	font-weight: bold;
+}
+.color_brown{
+	color:brown;
+	font-weight: bold;
+}
+.color_blue{
+	color:blue;
+	font-weight: bold;
+}
+.color_orange{
+	color:orange;
+	font-weight: bold;
+}
